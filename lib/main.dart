@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ticket_app/base/bottom_nav_bar.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -12,14 +14,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(),
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.blue,
-          title: const Text("Your Flutter App"),
-        ),
-        body: Center(child: Text("Hello Flutter")),
-      ),
+      home: BottomNavBar(),
     );
   }
 }
+
+/*
+
+  Deleted the home: Scaffold then imported 
+  BottomnavBar component to home:
+
+*/
 
