@@ -21,9 +21,13 @@ class BottomNavBar extends StatelessWidget {
         child: Text('Welcome to the Ticket App!'),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor:  Colors.blueGrey,
+        unselectedItemColor: const Color(0xFF526400),
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings"),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
+          BottomNavigationBarItem(icon: Icon(Icons.airplane_ticket_outlined), label: "airplane_ticket_outlined"),
+          BottomNavigationBarItem(icon: Icon(Icons.person_2_outlined), label: "Person"),
         ] // a list
       ),
     );
