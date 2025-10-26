@@ -26,10 +26,22 @@ class BottomNavBar extends StatelessWidget {
         selectedItemColor:  Colors.blueGrey,
         unselectedItemColor: const Color(0xFF526400),
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
-          BottomNavigationBarItem(icon: Icon(Icons.airplane_ticket_outlined), label: "airplane_ticket_outlined"),
-          BottomNavigationBarItem(icon: Icon(Icons.person_2_outlined), label: "Person"),
+          BottomNavigationBarItem(
+            icon: Icon(FluentSystemIcons.ic_fluent_home_add_regular),
+            activeIcon: Icon(FluentSystemIcons.ic_fluent_home_filled),
+            label: "Home"),
+          BottomNavigationBarItem(
+            icon: Icon(FluentSystemIcons.ic_fluent_search_regular),
+            activeIcon: Icon(FluentSystemIcons.ic_fluent_search_filled),
+            label: "Search"),
+          BottomNavigationBarItem(
+            icon: Icon(FluentSystemIcons.ic_fluent_airplane_regular),
+            activeIcon: Icon(FluentSystemIcons.ic_fluent_airplane_filled),
+            label: "Tickets"),
+          BottomNavigationBarItem(
+            icon: Icon(FluentSystemIcons.ic_fluent_person_accounts_regular),
+            activeIcon: Icon(FluentSystemIcons.ic_fluent_person_accounts_filled),
+            label: "Profile"), 
         ] // a list
       ),
     );
