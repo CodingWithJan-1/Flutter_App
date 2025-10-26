@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fluentui_icons/fluentui_icons.dart';
+
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({super.key});
