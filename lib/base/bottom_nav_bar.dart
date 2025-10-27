@@ -20,10 +20,12 @@ class _BottomNavBar extends State<BottomNavBar> {
   // initalize variable to store index
   int _selectedIndex = 0;
 
-  // function to get tapped Index
+  // function to get tapped Index and set
+  //the state dynamically w/0 hot reloading
   void _onItemTapped(int index){
-    _selectedIndex = index; 
-    print("tapped index: $_selectedIndex");
+    setState(() {
+      _selectedIndex = index;
+    });
   }
 
   @override
