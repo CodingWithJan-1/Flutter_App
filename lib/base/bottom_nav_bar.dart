@@ -17,14 +17,22 @@ class _BottomNavBar extends State<BottomNavBar> {
     const Center(child: Text("Tickets")),
     const Center(child: Text("Persons")),
   ];
+  // initalize variable to store index
+  int _selectedIndex = 0;
 
+  // function to get tapped Index
+  void _onItemTapped(int index){
+    _selectedIndex = index; 
+    print("tapped index: $_selectedIndex");
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Center(child: Text('My Tickets'))),
-      body: appScreens[0],
+      body: appScreens[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        onTap: _onItemTapped,
         selectedItemColor: Colors.blueGrey,
         unselectedItemColor: const Color(0xFF526400),
         items: const [
